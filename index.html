@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Password Generator</title>
+</head>
+<body>
+
+    <section>
+        <div class="form_cover">
+            <form action="#" method="POST">
+    
+                <h4>Password Generator</h4>
+    
+                <div class="put">
+                    <span id="result"></span>
+                    <button class="copy" id="clipboard">
+                        <i class="far fa-clipboard"></i>
+                    </button>
+                </div>
+                
+                    <div class="agree">
+                        <input type="number" id="length" min='0' max='0' value='8' required/>
+                        <label>&nbsp Password length</label>
+                    </div>
+    
+                    <div class="agree">
+                        <input type="checkbox" id="uppercase" checked />
+                        <label>&nbsp Include uppercase letters</label> 
+                    </div>
+    
+                    <div class="agree">
+                        <input type="checkbox" id="lowercase" checked />
+                        <label>&nbsp Include lowercase letters</label>
+                    </div>
+    
+                    <div class="agree">
+                        <input type="checkbox" id="numbers" checked />
+                        <label>&nbsp Include numbers</label> 
+                    </div>
+    
+                    <div class="agree">
+                        <input type="checkbox" id="symbols" checked />
+                        <label>&nbsp Include symbols</label> 
+                    </div>
+                
+                <button class="submit" id="generate">
+                    Generate password
+                </button>
+    
+            </form>
+        </div>
+    </section>
+
+
+    <section>
+        <footer>
+            <div class="footer">
+                <span>All &copy 2025 Reserved on Password Generator  -  Designed & Develped by Clovis</span>
+            </div>
+        </footer>
+    </section>
+    
+
+    <section>
+        <script src="script.js"></script> 
+    </section>
+    
+</body>
+</html>

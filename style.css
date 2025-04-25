@@ -1,0 +1,164 @@
+/* -----Css affect hall page for postining and font family----- */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(209, 208, 208);
+}
+
+
+
+
+/* ------ starting css of form -------------- */
+
+/* Css for form pasitioning and sizing */
+.form_cover{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    width: 100%;
+}
+
+form{
+    background: white;
+    padding: 20px 30px;
+    box-shadow: 6px 1px 12px;
+    width: 30%;
+}
+
+
+/* Css for form header */
+
+form h4{
+    color:#3C62B4;
+    font-weight: bolder;
+}  
+
+
+/* Css for Input Where password will be displayed */
+.put {
+	background-color: rgb(219, 219, 219);
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	position: relative;
+    box-shadow: 1px 1px 2px;
+	font-size: 15px;
+	letter-spacing: 1px;
+	padding: 12px 10px;
+	height: 40px;
+	width: 100%;
+}
+
+.put #result {
+  	word-wrap: break-word;
+	max-width: calc(100% - 40px);
+}
+
+
+
+/* Css for copy to clipbord icon */
+
+.put .copy {
+	font-size: 20px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 40px;
+	width: 40px;
+}
+
+.copy {
+	border: none;
+	color: white;
+	cursor: pointer;
+	padding: 5px 10px;
+	background-color: #3C62B4;
+}
+
+.copy:hover{
+    background: #002a84;
+}
+
+.copy-large {
+	display: block;
+	width: 100%;
+}
+
+
+/* Css for checkbox input and their options */
+
+.agree{
+    display: flex;
+    margin: 10px 0;
+}
+
+.agree input[type=number]{
+    width: 20%;
+}
+
+
+/* Css for Submittion button */
+
+.submit{
+    margin-top: 10px;
+    background: #3C62B4;
+    color: white;
+    width: 100%;
+    padding: 5px;
+    border: none;
+}
+
+.submit:hover{
+    background: #002a84;
+}
+
+/* ------- end of form --------------- */
+
+
+
+
+/*-----------Start of footer section ---------------*/
+
+footer{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #3C62B4;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 8px;
+    font-size: 2.5vmin;
+}
+
+/*-----------end of footer section ---------------*/
+
+/* -------Responsive section------- */
+@media only screen and (max-width: 900px) {
+    form{
+        width: 40%;
+    }    
+    }
+/* Foe medium devices */
+@media only screen and (max-width: 800px) {
+    form{
+        width: 60%;
+    }     
+    }
+
+/* For Mobile devides */
+@media only screen and (max-width: 600px) {
+    form{
+        width: 80%;
+    }    
+    }
